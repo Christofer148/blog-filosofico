@@ -1,0 +1,40 @@
+---
+const cardItem =   {
+    title: "Sin Cara",
+    texto: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit natus vitae nesciunt soluta, " +
+			"mollitia ad quae asperiores, a omnis accusamus fugit modi ipsa quidem voluptates voluptate doloremque, dicta illo? Dignissimos. " +
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit natus vitae nesciunt soluta, " +
+			"mollitia ad quae asperiores, a omnis accusamus fugit modi ipsa quidem voluptates voluptate doloremque, dicta illo? Dignissimos. ",
+    url: "/#articulos",
+  };
+---
+
+<article class="card">
+    <div class="info">
+        <h2 class="title">{cardItem.title}</h2>
+        <p class="texto">{cardItem.texto}</p>
+    </div>
+    <div class="action">
+        <a class="link">Ver más</a>
+    </div>
+</article>
+
+<style>
+    .card{
+        min-height: 100px;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #183D3D;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+
+    }
+    .title {
+        margin-top: 10px;
+    }
+    .action{
+        margin-bottom: 10px;
+    }
+</style>

@@ -1,0 +1,57 @@
+---
+const navItems = [
+  {
+    title: "Artículos",
+    label: "articulos",
+    url: "/#articulos",
+  },
+  {
+    title: "Sobre mí",
+    label: "sobre-mi",
+    url: "/#sobre-mi",
+  },
+  {
+    title: "Contacto",
+    label: "contacto",
+    url: "/#contacto",
+  },
+];
+---
+
+<header class="header">
+    <h2 class="logo">Blog Filosófico</h2>
+    <nav class="nav">
+        {
+            navItems.map((link) => (
+              <a
+                class="link"
+                aria-label={link.label}
+                href={link.url}
+              >
+                {link.title}
+              </a>
+            ))
+          }
+    </nav>
+</header>
+
+<style>
+    .header {
+        height: 10dvh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+        margin: 15px 35px;
+    }
+    nav{
+        margin: auto 35px;
+        display: flex;
+        gap: 20px;
+    }
+    .link {
+        color: #EEE;
+        text-decoration: none;
+    }
+</style>
